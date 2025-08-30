@@ -61,13 +61,13 @@ onMounted(()=>{
 	gsap.from('#tsvg path:nth-child(1)',{
 		drawSVG: '0%',
 		duration: 6,
-		delay: 2.5,
+		delay: 1.5,
 		ease: 'power2'
 	});
 	gsap.from('#tsvg path:nth-child(2)',{
 		drawSVG: '0%',
 		duration: 6,
-		delay: 3.5,
+		delay: 2.5,
 		ease: 'power4'
 	});
 });
