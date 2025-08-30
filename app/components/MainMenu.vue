@@ -7,9 +7,6 @@
 				v-if="menu.mmenu">
 				<li @click="scrolldown('home')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('home')
 				}}</li>
-				<li @click="scrolldown('about')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{
-					$t('about')
-				}}</li>
 				<li @click="scrolldown('services')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('services')
 				}}</li>
 				<li @click="scrolldown('contact')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('contact')
