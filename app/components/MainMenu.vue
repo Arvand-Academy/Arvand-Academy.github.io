@@ -1,18 +1,20 @@
 <template>
 	<menu
 		class="w-full px-4 py-6 bg-[color:hsla(0,0%,95%,0.8)] dark:bg-[color:hsla(0,0%,5%,0.8)] flex flex-wrap justify-between items-center fixed top-0 left-0">
-		<h1 class="text-2xl tracking-widest z-20">{{ $t('name') }}</h1>
+		<h1 class="text-xl tracking-widest z-20">{{ $t('name') }}</h1>
 		<Transition>
 			<ul class="grid md:flex gap-8 justify-center justify-items-center rounded-t-lg md:justify-between items-center px-2 fixed md:relative bottom-0 bg-[color:hsl(0,0%,95%)] dark:bg-[color:hsl(0,0%,5%)]  backdrop-blur-2xl md:bg-transparent md:dark:bg-transparent right-0 w-full md:w-fit grid-cols-2 py-4 md:py-0 z-20"
 				v-if="menu.mmenu">
 				<li @click="scrolldown('home')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('home')
 				}}</li>
-				<li @click="scrolldown('services')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{
-					$t('services')
+				<li @click="scrolldown('about')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{
+					$t('about')
 				}}</li>
-				<li @click="scrolldown('team')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('works')
+				<li @click="scrolldown('services')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('services')
 				}}</li>
 				<li @click="scrolldown('contact')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('contact')
+				}}</li>
+				<li @click="scrolldown('agents')" class="cursor-pointer transition-colors hover:text-blue-600 dark:hover:text-green-400">{{ $t('agents')
 				}}</li>
 				<li class="bg-slate-950/30 dark:bg-slate-50/30 h-10 w-px hidden md:block"></li>
 				<li @click="togglemenu('lang')">

@@ -1,9 +1,10 @@
 {
-  "name": "Daniel Nasr",
+  "name": "Arvand Financial Academy",
   "home": "Home",
+  "about": "About Us",
   "services": "Services",
-  "works": "Works",
-  "contact": "Contact",
+  "contact": "Contact Us",
+  "agents": "Agents",
   "dark": "Dark",
   "system": "Device",
   "light": "Light",
