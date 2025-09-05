@@ -58,18 +58,73 @@ onMounted(()=>{
   	stagger: 0.2,
 		onComplete: () => { btitle.revert()  }
 	});
-	gsap.from('#tsvg path:nth-child(1)',{
+	gsap.fromTo('#tsvg path',
+	{
 		drawSVG: '0%',
-		duration: 6,
-		delay: 1.5,
-		ease: 'power2'
+		y: 0,
+		x: 0,
+		rotate: 0
+	},
+	{
+		y: "random(-5,-10)",
+		x: "random(10,20)",
+		rotate: 'random(0,-180)',
+		drawSVG: '100%',
+		duration: 4,
+		delay: 1,
+		ease: 'power2',
+		repeat: -1,
+		yoyo: true
 	});
-	gsap.from('#tsvg path:nth-child(2)',{
-		drawSVG: '0%',
-		duration: 6,
-		delay: 2.5,
-		ease: 'power4'
+	gsap.fromTo('#bsvg path',
+	{
+		x: 0,
+		y: 0,
+		rotate: 0,
+	},
+	{
+		y: "random(-5,-15)",
+		x: "random(-10,-20)",
+		rotate: 'random(0,180)',
+		duration: 5,
+		delay: 2,
+		ease: 'power1',
+		repeat: -1,
+		yoyo: true
 	});
+	gsap.fromTo('#msvg path',
+	{
+		x: 0,
+		y: 0,
+		rotate: 0,
+	},
+	{
+		y: "random(5,15)",
+		x: "random(-5,-10)",
+		rotate: 'random(0,90)',
+		duration: 6,
+		delay: 3,
+		ease: 'power3',
+		repeat: -1,
+		yoyo: true
+	});
+	gsap.fromTo('#dsvg path',
+	{
+		x: 0,
+		y: 0,
+		rotate: 0,
+	},
+	{
+		y: "random(5,10)",
+		x: "random(10,20)",
+		rotate: 'random(0,-90)',
+		duration: 4,
+		delay: 4,
+		ease: 'power4',
+		repeat: -1,
+		yoyo: true
+	});
+
 });
 </script>
 <style>
