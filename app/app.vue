@@ -6,6 +6,9 @@
 			<main class="w-full min-h-svh">
 				<div class="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-600 dark:via-green-400 to-transparent"></div>
 				<BHome />
+				<BServices />
+				<BContact />
+				<BAgents />
 			</main>
 		</div>
 	</div>
@@ -17,6 +20,9 @@ import { SplitText  } from 'gsap/SplitText';
 import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
 import MainMenu from './components/MainMenu.vue';
 import BHome from './components/BHome.vue';
+import BServices from './components/BServices.vue';
+import BContact from './components/BContact.vue';
+import BAgents from './components/BAgents.vue';
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 const { t, locale, setLocale } = useI18n();
 const i18nHead = useLocaleHead({ addSeoAttributes: true, addDirAttribute: true });
@@ -58,71 +64,333 @@ onMounted(()=>{
   	stagger: 0.2,
 		onComplete: () => { btitle.revert()  }
 	});
-	gsap.fromTo('#tsvg path',
-	{
-		drawSVG: '0%',
+	gsap.fromTo("#ssvg",{
+		opacity: 0,
+		y: 40
+	},{
+		opacity: 1,
 		y: 0,
-		x: 0,
-		rotate: 0
-	},
+		duration: 4,
+		delay: 1,
+		ease: 'power4',
+		scrollTrigger: {
+			trigger: "#ssvg",
+		}
+	});
+	gsap.fromTo("#asvg",{
+		opacity: 0,
+		y: 40
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 4,
+		delay: 1,
+		ease: 'power4',
+		scrollTrigger: {
+			trigger: "#asvg",
+		}
+	});
+	gsap.fromTo("#desc",{
+		opacity: 0,
+		y: 50
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 4,
+		delay: 1,
+		ease: 'power4',
+	});
+	gsap.fromTo("#c1",{
+		scale: 0
+	},{
+		scale: 1,
+		duration: 1,
+		delay: 0.5,
+		ease: 'bounce',
+		scrollTrigger: {
+			trigger: "#c1",
+		}
+	});
+	gsap.fromTo("#c2",{
+		scale: 0
+	},{
+		scale: 1,
+		duration: 1,
+		delay: 1,
+		ease: 'bounce',
+		scrollTrigger: {
+			trigger: "#c2",
+		}
+	});
+	gsap.fromTo("#c3",{
+		scale: 0
+	},{
+		scale: 1,
+		duration: 1,
+		delay: 1.5,
+		ease: 'bounce',
+		scrollTrigger: {
+			trigger: "#c3",
+		}
+	});
+	gsap.fromTo("#c4",{
+		scale: 0
+	},{
+		scale: 1,
+		duration: 1,
+		delay: 2,
+		ease: 'bounce',
+		scrollTrigger: {
+			trigger: "#c4",
+		}
+	});
+	gsap.fromTo("#i1",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 3,
+		delay: 2,
+		ease: 'power2',
+		scrollTrigger: {
+			trigger: "#i1",
+		}
+	});
+	gsap.fromTo("#s1",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 0.25,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s1",
+		}
+	});
+	gsap.fromTo("#s2",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 0.5,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s2",
+		}
+	});
+	gsap.fromTo("#s3",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 0.75,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s3",
+		}
+	});
+	gsap.fromTo("#s4",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 1,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s4",
+		}
+	});
+	gsap.fromTo("#s5",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 1.25,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s5",
+		}
+	});
+	gsap.fromTo("#s6",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 1.5,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s6",
+		}
+	});
+	gsap.fromTo("#s7",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 1.75,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s7",
+		}
+	});
+	gsap.fromTo("#s8",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 2,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s8",
+		}
+	});
+	gsap.fromTo("#s9",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 2.25,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s9",
+		}
+	});
+	gsap.fromTo("#s10",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 2.5,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s10",
+		}
+	});
+	gsap.fromTo("#s11",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 2.75,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s11",
+		}
+	});
+	gsap.fromTo("#s12",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 3,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s12",
+		}
+	});
+	gsap.fromTo("#s13",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 3.25,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s13",
+		}
+	});
+	gsap.fromTo("#s14",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 3.5,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s14",
+		}
+	});
+	gsap.fromTo("#s15",{
+		opacity: 0,
+		y: 30
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		delay: 4,
+		ease: 'power3',
+		scrollTrigger: {
+			trigger: "#s15",
+		}
+	});
+	gsap.from('#tsvg path',
 	{
-		y: "random(-5,-10)",
-		x: "random(10,20)",
-		rotate: 'random(0,-180)',
-		drawSVG: '100%',
+		y: -5,
+		x: 10,
+		rotate: -180,
+		opacity: 0,
 		duration: 4,
 		delay: 1,
 		ease: 'power2',
-		repeat: -1,
-		yoyo: true
 	});
-	gsap.fromTo('#bsvg path',
+	gsap.from('#bsvg path',
 	{
-		x: 0,
-		y: 0,
-		rotate: 0,
-	},
-	{
-		y: "random(-5,-15)",
-		x: "random(-10,-20)",
-		rotate: 'random(0,180)',
+		y: -5,
+		x: -10,
+		opacity: 0,
+		rotate: 180,
 		duration: 5,
-		delay: 2,
+		delay: 1,
 		ease: 'power1',
-		repeat: -1,
-		yoyo: true
 	});
-	gsap.fromTo('#msvg path',
+	gsap.from('#msvg path',
 	{
-		x: 0,
-		y: 0,
-		rotate: 0,
-	},
-	{
-		y: "random(5,15)",
-		x: "random(-5,-10)",
-		rotate: 'random(0,90)',
+		y: 5,
+		x: -5,
+		opacity: 0,
+		rotate: 90,
 		duration: 6,
-		delay: 3,
+		delay: 1,
 		ease: 'power3',
-		repeat: -1,
-		yoyo: true
 	});
-	gsap.fromTo('#dsvg path',
+	gsap.from('#dsvg path',
 	{
-		x: 0,
-		y: 0,
-		rotate: 0,
-	},
-	{
-		y: "random(5,10)",
-		x: "random(10,20)",
-		rotate: 'random(0,-90)',
+		opacity: 0,
+		y: 10,
+		x: 20,
+		rotate: -90,
 		duration: 4,
-		delay: 4,
+		delay: 1,
 		ease: 'power4',
-		repeat: -1,
-		yoyo: true
 	});
 
 });

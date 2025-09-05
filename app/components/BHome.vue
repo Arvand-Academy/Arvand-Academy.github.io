@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="w-full min-h-[calc(100svh_-_var(--menu))] flex flex-wrap justify-around items-center px-4">
+  <section id="home" class="w-full min-h-[calc(100svh_-_var(--menu))] flex flex-wrap flex-col md:flex-row justify-around items-center px-4">
     <div class="grid gap-3 grid-cols-2">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 md:w-32 md:h-32 overflow-visible" viewBox="0 0 24 24" id="bsvg">
         <!-- Icon from Huge Icons by Hugeicons - undefined -->
@@ -24,7 +24,7 @@
         </g>
       </svg>
     </div>
-    <div class="max-w-128 text-lg sm:text-xl text-center">
+    <div class="max-w-128 text-lg sm:text-xl text-center" id="desc">
       <p>{{ $t('desc')  }}</p>
     </div>
   </section>

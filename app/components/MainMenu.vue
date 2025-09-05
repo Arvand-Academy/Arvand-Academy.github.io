@@ -1,7 +1,7 @@
 <template>
 	<menu
-		class="w-full px-4 py-6 bg-[color:hsla(0,0%,95%,0.8)] dark:bg-[color:hsla(0,0%,5%,0.8)] flex flex-wrap justify-between items-center fixed top-0 left-0">
-		<h1 class="text-xl tracking-widest z-20">{{ $t('name') }}</h1>
+		class="w-full px-4 py-6 bg-[color:hsla(0,0%,95%,0.8)] dark:bg-[color:hsla(0,0%,5%,0.8)] flex flex-wrap justify-between items-center fixed top-0 left-0 z-50">
+		<h1 class="text-xl tracking-widest">{{ $t('name') }}</h1>
 		<Transition>
 			<ul class="grid md:flex gap-8 justify-center justify-items-center rounded-t-lg md:justify-between items-center px-2 fixed md:relative bottom-0 bg-[color:hsl(0,0%,95%)] dark:bg-[color:hsl(0,0%,5%)]  backdrop-blur-2xl md:bg-transparent md:dark:bg-transparent right-0 w-full md:w-fit grid-cols-2 py-4 md:py-0 z-20"
 				v-if="menu.mmenu">
@@ -39,7 +39,7 @@
 		</button>
 	</menu>
 	<Transition>
-		<div v-if="menu.lang" class="fixed bottom-4 left-1/2 w-full px-2 -translate-x-1/2 flex justify-center">
+		<div v-if="menu.lang" class="fixed bottom-4 left-1/2 w-full px-2 -translate-x-1/2 flex justify-center z-50">
 			<div
 				class="bg-black/5 dark:bg-white/5 rounded-md  backdrop-blur-2xl text-black dark:text-white px-3 md:px-12 py-2 flex flex-wrap gap-2 md:gap-12 select-none w-full md:w-fit justify-around">
 				<button
@@ -52,7 +52,7 @@
 		</div>
 	</Transition>
 	<Transition>
-		<div v-if="menu.theme" class="fixed bottom-4 left-1/2 w-full px-2 -translate-x-1/2 flex justify-center">
+		<div v-if="menu.theme" class="fixed bottom-4 left-1/2 w-full px-2 -translate-x-1/2 flex justify-center z-50">
 			<div
 				class="bg-slate-950/5 dark:bg-slate-50/5 rounded-md  backdrop-blur-2xl text-slate-950 dark:text-slate-50 px-3 md:px-12 py-2 flex flex-wrap gap-2 md:gap-12 select-none w-full md:w-fit justify-around">
 				<button
