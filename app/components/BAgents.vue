@@ -9,7 +9,10 @@
     <div class="max-w-128 text-lg sm:text-xl text-center md:mt-2">
       <ul class="flex flex-col gap-1">
         <li class="mb-2"><h3 class="text-3xl uppercase bg-blue-600 text-white dark:bg-green-400 dark:text-black py-1 px-2 rounded-md">{{ $t('agents')  }}</h3></li>
-        <li id="i1"><img src="/fardad.png" class="w-64 rounded-lg grayscale-100 hover:grayscale-0 transition-all duration-300 cursor-pointer"></li>
+        <li id="i1" class="px-3 py-2 rounded-md bg-black/5 dark:bg-white/5 border-2 border-blue-600 dark:border-green-400 transition-all duration-700 hover:px-4 hover:py-3 group">
+          <img src="/fardad.png" class="w-64 rounded-md grayscale-100 hover:grayscale-0 transition-all duration-700 cursor-pointer">
+          <p class="mt-2 text-[0px] transition-all duration-700 group-hover:text-base">{{ $t('fardad')  }}</p>
+        </li>
       </ul>
     </div>
   </section>

@@ -7,7 +7,7 @@
     </svg>
     </div>
     <div class="text-lg lg:text-xl text-center md:mt-2">
-      <ul class="grid grid-cols-1 lg:grid-cols-2 gap-2 text-white dark:text-black items-start">
+      <ul class="grid grid-cols-1 lg:grid-cols-2 gap-2 text-white dark:text-black items-end">
         <li class="mb-2 text-black dark:text-white"><h3 class="text-3xl uppercase">{{ $t('services')  }}</h3></li>
         <li class="bg-blue-600 dark:bg-green-400 rounded-md py-0.5 px-1" id="s1">{{ $t('s1')  }}</li>
         <li class="bg-blue-600 dark:bg-green-400 rounded-md py-0.5 px-1" id="s2">{{ $t('s2')  }}</li>

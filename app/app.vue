@@ -9,6 +9,7 @@
 				<BServices />
 				<BContact />
 				<BAgents />
+				<div class="w-full text-center text-black/10 dark:text-white/10 py-1"><a href="//imdanieldev.github.io" target="_blank">Made By Danial Nasr</a></div>
 			</main>
 		</div>
 	</div>
@@ -158,13 +159,13 @@ onMounted(()=>{
 	});
 	gsap.fromTo("#i1",{
 		opacity: 0,
-		y: 30
+		y: 50
 	},{
 		opacity: 1,
 		y: 0,
-		duration: 3,
-		delay: 2,
-		ease: 'power2',
+		duration: 1,
+		delay: 1,
+		ease: 'power4',
 		scrollTrigger: {
 			trigger: "#i1",
 		}
