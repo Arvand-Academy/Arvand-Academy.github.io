@@ -1,12 +1,12 @@
 <template>
-  <section id="contact" class="w-full min-h-svh flex flex-col md:flex-row justify-around items-center px-4">
+  <section id="contact" class="w-full min-h-svh flex flex-col md:flex-row justify-around items-center px-4 mt-2">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 md:w-64 md:h-64" viewBox="0 0 24 24" id="ccsvg">
           <!-- Icon from Huge Icons by Hugeicons - undefined -->
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.778 11.942C2.83 10.29 2.372 8.94 2.096 7.572c-.408-2.024.526-4.001 2.073-5.263c.654-.533 1.404-.35 1.791.343l.873 1.567c.692 1.242 1.038 1.862.97 2.52c-.069.659-.536 1.195-1.469 2.267zm0 0c1.919 3.346 4.93 6.36 8.28 8.28m0 0c1.653.948 3.002 1.406 4.37 1.682c2.024.408 4.001-.526 5.262-2.073c.534-.654.351-1.404-.342-1.791l-1.567-.873c-1.242-.692-1.862-1.038-2.52-.97c-.659.069-1.195.536-2.267 1.469z" color="currentColor"/>
         </svg>
       </div>
-	    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+	    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center mt-2">
         <div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group" id="c1">
           <h4 class="text-xl md:text-2xl">{{ $t('name1')  }}</h4>
           <p class="text-base md:text-lg">09134209635</p>

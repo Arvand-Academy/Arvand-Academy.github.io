@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="w-full min-h-svh flex flex-col md:flex-row justify-around items-center px-4">
+  <section id="services" class="w-full min-h-svh flex flex-col md:flex-row justify-around items-center px-4 mt-2">
     <div>
     <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 md:w-64 md:h-64" viewBox="0 0 24 24" id="ssvg">
       <!-- Icon from Huge Icons by Hugeicons - undefined -->

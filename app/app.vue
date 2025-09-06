@@ -419,4 +419,15 @@ onMounted(()=>{
 	transform: translateY(80px);
 	opacity: 0;
 }
+
+.theme-enter-active,
+.theme-leave-active {
+	transition: all 0.2s ease-in-out;
+}
+
+.theme-enter-from,
+.theme-leave-to {
+	transform: rotate(360deg);
+	opacity: 0;
+}
 </style>

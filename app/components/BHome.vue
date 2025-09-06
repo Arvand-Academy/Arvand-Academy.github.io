@@ -26,17 +26,17 @@
     </div>
     <div class="w-full md:max-w-128 text-lg sm:text-xl text-center mt-4 md:mt-0 group" id="desc">
       <h4 class="py-1 px-2 text-xl group-hover:-translate-y-3 transition-all duration-700 bg-blue-600 dark:bg-green-400 text-white dark:text-black rounded-t-md group-hover:rounded-md">{{ $t('desct')  }}</h4>
-      <p class="bg-black/5 dark:bg-white/5 border-2 border-blue-600 dark:border-green-400 py-2 px-4 rounded-b-md group-hover:rounded-md transition-all duration-700 overflow-hidden relative">
+      <div class="bg-black/5 dark:bg-white/5 border-2 border-blue-600 dark:border-green-400 py-2 px-4 rounded-b-md group-hover:rounded-md transition-all duration-700 overflow-hidden relative">
         {{ $t('desc')  }}
         <div class="w-20 h-20 blur-3xl transition-all duration-700 bg-blue-800 dark:bg-green-400 absolute rounded-full group-hover:w-30 group-hover:h-30 group-hover:blur-4xl"></div>
-      </p>
+      </div>
     </div>
     <div class="w-full md:max-w-72 text-lg sm:text-xl text-center mt-4 md:mt-0 group" id="desc">
       <h4 class="py-1 px-2 text-xl group-hover:-translate-y-3 transition-all duration-700 bg-blue-600 dark:bg-green-400 text-white dark:text-black rounded-t-md group-hover:rounded-md">{{ $t('desc2t')  }}</h4>
-      <p class="bg-black/5 dark:bg-white/5 border-2 border-blue-600 dark:border-green-400 py-2 px-4 rounded-b-md group-hover:rounded-md transition-all duration-700 overflow-hidden relative">
+      <div class="bg-black/5 dark:bg-white/5 border-2 border-blue-600 dark:border-green-400 py-2 px-4 rounded-b-md group-hover:rounded-md transition-all duration-700 overflow-hidden relative">
         {{ $t('desc2')  }}
         <div class="w-20 h-20 blur-3xl transition-all duration-700 bg-blue-800 dark:bg-green-400 absolute rounded-full group-hover:w-30 group-hover:h-30 group-hover:blur-4xl"></div>
-      </p>
+      </div>
     </div>
   </section>
 </template>
