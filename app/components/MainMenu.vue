@@ -1,7 +1,7 @@
 <template>
 	<menu
-		class="w-full px-4 py-6 bg-[color:hsla(0,0%,95%,0.8)] dark:bg-[color:hsla(0,0%,5%,0.8)] flex flex-wrap justify-between items-center fixed top-0 left-0 z-50">
-		<h1 class="text-xl tracking-widest">{{ $t('name') }}</h1>
+		class="w-full px-4 py-6 bg-white/50 dark:bg-black/50 backdrop-blur-3xl flex flex-wrap justify-between items-center fixed top-0 left-0 z-50">
+		<h1 class="text-lg md:text-xl tracking-widest">{{ $t('name') }}</h1>
 		<Transition>
 			<ul class="grid md:flex gap-8 justify-center justify-items-center rounded-t-lg md:justify-between items-center px-2 fixed md:relative bottom-0 bg-[color:hsl(0,0%,95%)] dark:bg-[color:hsl(0,0%,5%)]  backdrop-blur-2xl md:bg-transparent md:dark:bg-transparent right-0 w-full md:w-fit grid-cols-2 py-4 md:py-0 z-20"
 				v-if="menu.mmenu">

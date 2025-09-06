@@ -17,13 +17,12 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText  } from 'gsap/SplitText';
-import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
 import MainMenu from './components/MainMenu.vue';
 import BHome from './components/BHome.vue';
 import BServices from './components/BServices.vue';
 import BContact from './components/BContact.vue';
 import BAgents from './components/BAgents.vue';
-gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger , SplitText);
 const { t, locale, setLocale } = useI18n();
 const i18nHead = useLocaleHead({ addSeoAttributes: true, addDirAttribute: true });
 const pageTitle = computed(() => t('name'));
@@ -66,7 +65,7 @@ onMounted(()=>{
 	});
 	gsap.fromTo("#ssvg",{
 		opacity: 0,
-		y: 40
+		y: 50
 	},{
 		opacity: 1,
 		y: 0,
@@ -77,9 +76,22 @@ onMounted(()=>{
 			trigger: "#ssvg",
 		}
 	});
+	gsap.fromTo("#ccsvg",{
+		opacity: 0,
+		y: 50
+	},{
+		opacity: 1,
+		y: 0,
+		duration: 4,
+		delay: 1,
+		ease: 'power4',
+		scrollTrigger: {
+			trigger: "#ccsvg",
+		}
+	});
 	gsap.fromTo("#asvg",{
 		opacity: 0,
-		y: 40
+		y: 50
 	},{
 		opacity: 1,
 		y: 0,
