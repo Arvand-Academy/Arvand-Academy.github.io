@@ -9,7 +9,7 @@
 				<BServices />
 				<BContact />
 				<BAgents />
-				<div class="w-full text-center text-black/10 dark:text-white/10 py-1"><a href="//imdanieldev.github.io" target="_blank">Made By Danial Nasr</a></div>
+				<div class="w-full text-center text-black/10 dark:text-white/10 py-1"><a href="//imdanieldev.github.io" target="_blank">{{ $t('devmsg')  }}</a></div>
 			</main>
 		</div>
 	</div>
