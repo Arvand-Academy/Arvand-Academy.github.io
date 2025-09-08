@@ -64,19 +64,6 @@ onMounted(()=>{
   	stagger: 0.2,
 		onComplete: () => { btitle.revert()  }
 	});
-	gsap.fromTo("#ssvg",{
-		opacity: 0,
-		y: 50
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 4,
-		delay: 1,
-		ease: 'power4',
-		scrollTrigger: {
-			trigger: "#ssvg",
-		}
-	});
 	gsap.fromTo("#ccsvg",{
 		opacity: 0,
 		y: 50
@@ -118,7 +105,7 @@ onMounted(()=>{
 	},{
 		scale: 1,
 		duration: 1,
-		delay: 0.5,
+		delay: 0,
 		ease: 'bounce',
 		scrollTrigger: {
 			trigger: "#c1",
@@ -129,7 +116,7 @@ onMounted(()=>{
 	},{
 		scale: 1,
 		duration: 1,
-		delay: 1,
+		delay: 0.5,
 		ease: 'bounce',
 		scrollTrigger: {
 			trigger: "#c2",
@@ -140,7 +127,7 @@ onMounted(()=>{
 	},{
 		scale: 1,
 		duration: 1,
-		delay: 1.5,
+		delay: 1,
 		ease: 'bounce',
 		scrollTrigger: {
 			trigger: "#c3",
@@ -151,7 +138,7 @@ onMounted(()=>{
 	},{
 		scale: 1,
 		duration: 1,
-		delay: 2,
+		delay: 1.5,
 		ease: 'bounce',
 		scrollTrigger: {
 			trigger: "#c4",
@@ -168,201 +155,6 @@ onMounted(()=>{
 		ease: 'power4',
 		scrollTrigger: {
 			trigger: "#i1",
-		}
-	});
-	gsap.fromTo("#s1",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 0.25,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s1",
-		}
-	});
-	gsap.fromTo("#s2",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 0.5,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s2",
-		}
-	});
-	gsap.fromTo("#s3",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 0.75,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s3",
-		}
-	});
-	gsap.fromTo("#s4",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 1,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s4",
-		}
-	});
-	gsap.fromTo("#s5",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 1.25,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s5",
-		}
-	});
-	gsap.fromTo("#s6",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 1.5,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s6",
-		}
-	});
-	gsap.fromTo("#s7",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 1.75,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s7",
-		}
-	});
-	gsap.fromTo("#s8",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 2,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s8",
-		}
-	});
-	gsap.fromTo("#s9",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 2.25,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s9",
-		}
-	});
-	gsap.fromTo("#s10",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 2.5,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s10",
-		}
-	});
-	gsap.fromTo("#s11",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 2.75,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s11",
-		}
-	});
-	gsap.fromTo("#s12",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 3,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s12",
-		}
-	});
-	gsap.fromTo("#s13",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 3.25,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s13",
-		}
-	});
-	gsap.fromTo("#s14",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 3.5,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s14",
-		}
-	});
-	gsap.fromTo("#s15",{
-		opacity: 0,
-		y: 30
-	},{
-		opacity: 1,
-		y: 0,
-		duration: 1,
-		delay: 4,
-		ease: 'power3',
-		scrollTrigger: {
-			trigger: "#s15",
 		}
 	});
 	gsap.from('#tsvg path',
