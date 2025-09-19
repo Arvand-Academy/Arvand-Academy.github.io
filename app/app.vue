@@ -3,7 +3,7 @@
 		<div
 			class="flex flex-col justify-center items-center bg-[color:hsl(0,0%,90%)] dark:bg-[color:hsl(0,0%,0%)] text-[color:hsl(0,0%,5%)] dark:text-[color:hsl(0,0%,95%)] min-h-svh w-full relative vazir">
 			<MainMenu />
-			<main class="w-full min-h-svh">
+			<main class="w-full min-h-svh flex flex-col gap-y-5">
 				<div class="h-[2px] w-full bg-gradient-to-r from-transparent via-blue-600 dark:via-green-400 to-transparent"></div>
 				<BHome />
 				<BServices />
