@@ -18,7 +18,7 @@
 				id="c2">
 				<img src="/ehsan.jpg" class="w-1/3 h-full">
 				<div class="w-2/3 p-3">
-					<h4 class="text-lg sm:text-xl md:text-2xl">{{ $t('name1') }}</h4>
+					<h4 class="text-lg sm:text-xl md:text-2xl">{{ $t('name2') }}</h4>
 					<p class="text-base md:text-lg">09162675407</p>
 				</div>
 				<div
