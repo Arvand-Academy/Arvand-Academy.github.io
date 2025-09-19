@@ -7,10 +7,13 @@
         </svg>
       </div>
 	    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center mt-2">
-        <div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group" id="c1">
-          <h4 class="text-xl md:text-2xl">{{ $t('name1')  }}</h4>
-          <p class="text-base md:text-lg">09134209635</p>
-          <div class="bg-blue-800 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500"></div>
+        <div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group flex gap-x-1" id="c1">
+		  <img src="/rahman.jpg" class="h-full w-auto">
+		  <div>
+          	<h4 class="text-xl md:text-2xl">{{ $t('name1')  }}</h4>
+          	<p class="text-base md:text-lg">09134209635</p>
+          </div>
+		  <div class="bg-blue-800 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500"></div>
         </div>
         <div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group" id="c2">
           <h4 class="text-xl md:text-2xl">{{ $t('name2')  }}</h4>
