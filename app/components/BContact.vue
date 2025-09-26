@@ -1,48 +1,115 @@
 <template>
-	<section id="contact" class="w-full min-h-svh flex flex-col justify-center items-center px-4 mt-2">
-		<h3 class="text-2xl md:text-4xl border-blue-600 dark:border-green-400 border-b-1 w-fit">{{ $t('contact') }}
-		</h3>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center mt-4">
-			<div class="bg-black/5 dark:bg-white/5 flex flex-wrap justify-between items-center rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group"
-				id="c1">
-				<img src="/rahman.jpg" class="w-1/3 h-full">
-				<div class="w-2/3 p-3">
-					<h4 class="text-lg sm:text-xl md:text-2xl">{{ $t('name1') }}</h4>
-					<p class="text-base md:text-lg">09134209635</p>
-				</div>
-				<div
-					class="bg-blue-800 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500">
-				</div>
-			</div>
-			<div class="bg-black/5 dark:bg-white/5 flex flex-wrap justify-between items-center rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group"
-				id="c2">
-				<img src="/ehsan.jpg" class="w-1/3 h-full">
-				<div class="w-2/3 p-3">
-					<h4 class="text-lg sm:text-xl md:text-2xl">{{ $t('name2') }}</h4>
-					<p class="text-base md:text-lg">09162675407</p>
-				</div>
-				<div
-					class="bg-blue-800 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500">
-				</div>
-			</div>
-			<div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group"
-				id="c3">
-				<h4 class="text-xl md:text-2xl">{{ $t('tg') }}</h4>
-				<a href="//t.me/Arvand_Financial_School"
-					class="text-base md:text-lg break-words">@Arvand_Financial_School</a>
-				<div
-					class="bg-blue-600 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500">
-				</div>
-			</div>
-			<div class="bg-black/5 dark:bg-white/5 px-15 py-10 rounded-2xl border-2 border-blue-600 dark:border-green-400 relative overflow-hidden group"
-				id="c4">
-				<h4 class="text-xl md:text-2xl">{{ $t('mail') }}</h4>
-				<a href="mailto:ArvandFinancialAcademy2025@gmail.com"
-					class="text-base md:text-lg break-words">ArvandFinancialAcademy2025@gmail.com</a>
-				<div
-					class="bg-blue-600 dark:bg-green-400 w-15 h-15 rounded-full blur-2xl absolute bottom-0 right-0 group-hover:h-20 group-hover:w-20 group-hover:blur-3xl transition-all duration-500">
-				</div>
-			</div>
-		</div>
-	</section>
+    <section id="contact" class="w-full min-h-svh flex flex-col justify-center items-center px-4 mt-2">
+        <h3 class="text-2xl md:text-4xl border-blue-600 dark:border-green-400 border-b-1 w-fit">{{ $t('contact') }}
+        </h3>
+        <div class="flex flex-col md:flex-row justify-around items-center w-full gap-4 mt-6">
+            <div
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c1">
+                <img src="/rahman.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
+                <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
+                    <h4 class="text-lg">{{ $t('name1') }}</h4>
+                    <div class="flex flex-wrap gap-x-3 justify-between items-center mt-4">
+                        <a href="https://wa.me/+989134209635" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-green-500 text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413" />
+                            </svg>
+                        </a>
+                        <a href="tel:+989134209635"
+                            class="p-2 bg-white dark:bg-gray-900 text-blue-800 dark:text-green-400 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined -->
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                                    d="m9.159 5.712l-.403-.906c-.263-.592-.395-.888-.592-1.115a2 2 0 0 0-.928-.603C6.949 3 6.625 3 5.976 3c-.948 0-1.422 0-1.82.182a2.12 2.12 0 0 0-1.061 1.169c-.143.413-.102.838-.02 1.689q1.31 13.575 14.886 14.885c.85.082 1.275.123 1.689-.02a2.12 2.12 0 0 0 1.168-1.06c.182-.399.182-.873.182-1.821c0-.649 0-.973-.088-1.26a2 2 0 0 0-.603-.928c-.226-.197-.523-.328-1.115-.592l-.906-.402c-.642-.285-.962-.428-1.288-.459a2 2 0 0 0-.919.128c-.305.119-.574.343-1.114.793c-.537.447-.805.67-1.133.79a2.16 2.16 0 0 1-.981.101c-.346-.05-.61-.192-1.14-.475c-1.645-.88-2.553-1.787-3.433-3.433c-.283-.53-.424-.794-.475-1.14a2.16 2.16 0 0 1 .1-.98c.12-.329.344-.597.791-1.134c.45-.54.675-.809.793-1.114c.114-.292.158-.607.128-.919c-.03-.325-.173-.646-.459-1.288Z" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-linear-60 from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c2">
+                <img src="/ehsan.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
+                <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
+                    <h4 class="text-lg">{{ $t('name2') }}</h4>
+                    <div class="flex flex-wrap gap-x-3 justify-between items-center mt-4">
+                        <a href="https://wa.me/+989162675407" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-green-500 text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413" />
+                            </svg>
+                        </a>
+                        <a href="tel:+989162675407"
+                            class="p-2 bg-white dark:bg-gray-900 text-blue-800 dark:text-green-400 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined -->
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                                    d="m9.159 5.712l-.403-.906c-.263-.592-.395-.888-.592-1.115a2 2 0 0 0-.928-.603C6.949 3 6.625 3 5.976 3c-.948 0-1.422 0-1.82.182a2.12 2.12 0 0 0-1.061 1.169c-.143.413-.102.838-.02 1.689q1.31 13.575 14.886 14.885c.85.082 1.275.123 1.689-.02a2.12 2.12 0 0 0 1.168-1.06c.182-.399.182-.873.182-1.821c0-.649 0-.973-.088-1.26a2 2 0 0 0-.603-.928c-.226-.197-.523-.328-1.115-.592l-.906-.402c-.642-.285-.962-.428-1.288-.459a2 2 0 0 0-.919.128c-.305.119-.574.343-1.114.793c-.537.447-.805.67-1.133.79a2.16 2.16 0 0 1-.981.101c-.346-.05-.61-.192-1.14-.475c-1.645-.88-2.553-1.787-3.433-3.433c-.283-.53-.424-.794-.475-1.14a2.16 2.16 0 0 1 .1-.98c.12-.329.344-.597.791-1.134c.45-.54.675-.809.793-1.114c.114-.292.158-.607.128-.919c-.03-.325-.173-.646-.459-1.288Z" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-linear-60 from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c3">
+                <img src="/sara.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
+                <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
+                    <h4 class="text-lg">{{ $t('name3') }}</h4>
+                    <div class="flex flex-wrap gap-x-3 justify-between items-center mt-4">
+                        <a href="https://wa.me/+989133393902" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-green-500 text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413" />
+                            </svg>
+                        </a>
+                        <a href="tel:+989133393902"
+                            class="p-2 bg-white dark:bg-gray-900 text-blue-800 dark:text-green-400 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Huge Icons by Hugeicons - undefined -->
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                                    d="m9.159 5.712l-.403-.906c-.263-.592-.395-.888-.592-1.115a2 2 0 0 0-.928-.603C6.949 3 6.625 3 5.976 3c-.948 0-1.422 0-1.82.182a2.12 2.12 0 0 0-1.061 1.169c-.143.413-.102.838-.02 1.689q1.31 13.575 14.886 14.885c.85.082 1.275.123 1.689-.02a2.12 2.12 0 0 0 1.168-1.06c.182-.399.182-.873.182-1.821c0-.649 0-.973-.088-1.26a2 2 0 0 0-.603-.928c-.226-.197-.523-.328-1.115-.592l-.906-.402c-.642-.285-.962-.428-1.288-.459a2 2 0 0 0-.919.128c-.305.119-.574.343-1.114.793c-.537.447-.805.67-1.133.79a2.16 2.16 0 0 1-.981.101c-.346-.05-.61-.192-1.14-.475c-1.645-.88-2.553-1.787-3.433-3.433c-.283-.53-.424-.794-.475-1.14a2.16 2.16 0 0 1 .1-.98c.12-.329.344-.597.791-1.134c.45-.54.675-.809.793-1.114c.114-.292.158-.607.128-.919c-.03-.325-.173-.646-.459-1.288Z" />
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="p-2 bg-linear-60 from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                viewBox="0 0 24 24"><!-- Icon from Simple Icons by Simple Icons Collaborators - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md -->
+                                <path fill="currentColor"
+                                    d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 w-full py-2 px-3 flex flex-wrap justify-around items-center text-xl" id="c4">
+            <a href="//t.me/Arvand_Financial_School" class="px-6 py-2 rounded-lg bg-blue-800 text-white dark:bg-green-400 dark:text-black">
+                {{ $t('mail') }}
+            </a>
+            <a href="mailto:ArvandFinancialAcademy2025@gmail.com" class="px-6 py-2 rounded-lg bg-blue-800 text-white dark:bg-green-400 dark:text-black">
+                {{ $t('tg') }}
+            </a>
+        </div>
+    </section>
 </template>
