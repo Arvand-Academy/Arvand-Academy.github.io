@@ -4,7 +4,7 @@
         </h3>
         <div class="flex flex-col md:flex-row justify-around items-center w-full gap-4 mt-6">
             <div
-                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c1">
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-solid border-blue-800 dark:border-green-400" id="c1">
                 <img src="/rahman.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
                 <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
                     <h4 class="text-lg">{{ $t('name1') }}</h4>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div
-                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c2">
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-solid border-blue-800 dark:border-green-400" id="c2">
                 <img src="/ehsan.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
                 <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
                     <h4 class="text-lg">{{ $t('name2') }}</h4>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div
-                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-dashed border-blue-800 dark:border-green-400" id="c3">
+                class="w-full md:w-fit rounded-xl flex flex-col justify-center items-center border-2 border-solid border-blue-800 dark:border-green-400" id="c3">
                 <img src="/sara.jpg" class="w-full h-auto md:w-auto md:h-56 rounded-xl">
                 <div class="px-2 py-3 w-full flex flex-col justify-center items-center">
                     <h4 class="text-lg">{{ $t('name3') }}</h4>
