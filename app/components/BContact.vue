@@ -105,10 +105,10 @@
         </div>
         <div class="mt-8 w-full py-2 px-3 flex flex-wrap justify-around items-center text-xl" id="c4">
             <a href="//t.me/Arvand_Financial_School" class="px-6 py-2 rounded-lg bg-blue-800 text-white dark:bg-green-400 dark:text-black">
-                {{ $t('mail') }}
+                {{ $t('tg') }}
             </a>
             <a href="mailto:ArvandFinancialAcademy2025@gmail.com" class="px-6 py-2 rounded-lg bg-blue-800 text-white dark:bg-green-400 dark:text-black">
-                {{ $t('tg') }}
+                {{ $t('mail') }}
             </a>
         </div>
     </section>
