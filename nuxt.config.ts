@@ -1,0 +1,52 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineNuxtConfig({
+	compatibilityDate: '2025-07-15',
+	devtools: { enabled: false },
+	modules: ['@nuxtjs/i18n'],
+	css: ['~/main.css'],
+	vite: {
+		plugins: [
+			tailwindcss(),
+		],
+	},
+	i18n: {
+		locales: [
+			{
+				code: 'en',
+				name: 'English',
+				iso: 'en-US',
+				file: 'en.json',
+				dir: 'ltr',
+			},
+			{
+				code: 'fa',
+				name: 'Farsi',
+				iso: 'fa-IR',
+				file: 'fa.json',
+				dir: 'rtl',
+			},
+		],
+		defaultLocale: 'en',
+		langDir: './locales/',
+		strategy: 'no_prefix',
+		detectBrowserLanguage: {
+			useCookie: true,
+			cookieKey: 'i18n_redirected',
+			alwaysRedirect: false,
+			fallbackLocale: 'en',
+		},
+	},
+	app: {
+		head: {
+			meta: [
+				{ charset: 'utf-8' },
+				{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			],
+			link: [
+				{ rel: 'icon', type: 'image/png', href: '/logo.png' }
+			],
+		}
+	}
+})
