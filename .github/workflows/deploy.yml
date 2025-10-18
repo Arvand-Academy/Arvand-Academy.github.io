@@ -40,7 +40,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: ${{ github.ref == 'refs/heads/main' }}
 
     steps:
       - name: Checkout repository
@@ -55,4 +55,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
