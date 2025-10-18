@@ -1,9 +1,9 @@
 <template>
-	<div class="bg-neutral-950 min-h-svh w-full text-white vazir">
+	<div class="bg-neutral-200 min-h-svh w-full text-black vazir">
 		<div class="dot-grid-container">
-			<DotGrid :dot-size="5" :gap="20" base-color="#888888" active-color="#27FF64" :proximity="120"
+			<DotGrid :dot-size="5" :gap="20" base-color="#d4d4d4" active-color="#8e51ff" :proximity="150"
 				:speed-trigger="100" :shock-radius="250" :shock-strength="5" :max-speed="5000" :resistance="750"
-				:return-duration="1.5" class-name="custom-dot-grid" />
+				:return-duration="1.5" />
 		</div>
 		<div class="min-h-svh w-full flex flex-col justify-center items-center z-20 relative">
 			<NuxtPage></NuxtPage>
@@ -33,7 +33,7 @@ watch(locale, () => {
 	});
 });
 </script>
-<style scoped>
+<style>
 .dot-grid-container {
 	width: 100%;
 	height: 100svh;

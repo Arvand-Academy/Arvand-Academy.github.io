@@ -1,39 +1,31 @@
 <template>
     <div class="grid grid-cols-1 justify-items-stretch">
-        <div class="flex gap-x-5 items-center justify-center">
-            <h1 class="text-8xl font-bold text-shadow-md text-shadow-green-500 text-center">{{ $t('name') }}</h1>
-            <div class="flex justify-center mt-2">
-                <button
-                    class="p-4 border-2 border-white text-5xl rounded-xl backdrop-blur-xs cursor-pointer bg-black/10 backdrop-brightness-200"
-                    v-if="currentlang == 'en'" @click="changelang('fa')">Fa</button>
-                <button
-                    class="p-4 border-2 border-white text-5xl rounded-xl backdrop-blur-xs cursor-pointer bg-black/10 backdrop-brightness-200"
-                    v-if="currentlang == 'fa'" @click="changelang('en')">En</button>
+        <div class="px-2">
+            <div class="text-4xl sm:text-4xl md:text-6xl lg:text-8xl text-center relative">
+                <h1 class="bg-clip-text text-transparent bg-linear-180 from-violet-700 to-black">{{ $t('name') }}</h1>
             </div>
         </div>
-        <div class="flex justify-between px-4 mt-6 gap-x-6 text-xl items-center flex-wrap">
-            <NuxtLink
-                class="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-xs cursor-pointer hover:bg-black/10 backdrop-brightness-200 transition-colors duration-500"
-                to="/about">{{
-                    $t('about') }}</NuxtLink>
-            <NuxtLink
-                class="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-xs cursor-pointer hover:bg-black/10 backdrop-brightness-200 transition-colors duration-500"
-                to="/contact">{{
-                    $t('contact') }}</NuxtLink>
-            <NuxtLink
-                class="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-xs cursor-pointer hover:bg-black/10 backdrop-brightness-200 transition-colors duration-500"
-                to="/services">{{
-                    $t('services') }}</NuxtLink>
-            <NuxtLink
-                class="px-6 py-4 rounded-xl bg-white/10 backdrop-blur-xs cursor-pointer hover:bg-black/10 backdrop-brightness-200 transition-colors duration-500"
-                to="/agents">{{
-                    $t('agents') }}</NuxtLink>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 mt-8 px-5 text-center justify-items-center justify-center items-center text-xl">
+            <NuxtLink v-for="item in links"
+                class="bg-neutral-900/10 w-full sm:w-fit cursor-pointer px-6 py-4 shadow rounded-xl translate-y-1 hover:translate-y-0 hover:bg-violet-600 hover:text-white backdrop-blur-xs transition-all duration-300"
+                :to="`/${item}`">{{
+                    $t(item) }}</NuxtLink>
+            <div class="w-full sm:w-fit">
+                <button
+                class="bg-neutral-900/10 w-full sm:w-fit cursor-pointer px-6 py-4 shadow rounded-xl translate-y-1 hover:translate-y-0 hover:bg-violet-600 hover:text-white backdrop-blur-xs transition-all duration-300"
+                    v-show="currentlang == 'en'" @click="changelang('fa')">Fa</button>
+                <button
+                class="bg-neutral-900/10 w-full sm:w-fit cursor-pointer px-6 py-4 shadow rounded-xl translate-y-1 hover:translate-y-0 hover:bg-violet-600 hover:text-white backdrop-blur-xs transition-all duration-300"
+                    v-show="currentlang == 'fa'" @click="changelang('en')">En</button>
+            </div>
         </div>
     </div>
 </template>
 <script setup>
-const { setLocale, locale } = useI18n();
-const currentlang = ref(locale.value);
+const links = ['about', 'contact', 'services', 'agents']
+const { setLocale, locale } = useI18n()
+const currentlang = ref(locale.value)
 const changelang = async (lang) => {
     try {
         await setLocale(lang);

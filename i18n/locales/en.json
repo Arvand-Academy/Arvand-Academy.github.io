@@ -31,10 +31,14 @@
   "s20": "Consulting on financial software preparation",
   "name1": "Abdol Rahman Jamshidi",
   "name2": "Ehsan Akbari",
-  "name3": "Sara Rofugari",
   "tg": "Telegram",
   "mail": "Email",
   "fardad": "Fardad Financial Software",
   "devmsg": "Made By Danial Nasr",
-  "diaco": "Diaco System"
+  "diaco": "Diaco System",
+  "back": "Back Home",
+  "send": "Send",
+  "subject": "Subject",
+  "message": "Type Your Message here.",
+  "agentsT": "We are the official representative of Diaco System and Ariyan System software companies in the financial field. As an official representative, we provide specialized consulting, sales, deployment and implementation of financial software for businesses. Our goal is to make the selection and use of financial software easier, more accurate and more reliable for you. Relying on executive experience and financial knowledge, we are with you from the moment of selection to training and support."
 }
