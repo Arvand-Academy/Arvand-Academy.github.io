@@ -95,10 +95,10 @@
                         {{ $t('back') }}</NuxtLink>
                 </div>
                 <div class="mt-8 flex gap-4 flex-wrap justify-between items-center">
-                    <a href="tel:+989134209635"
+                    <a href="tel:+989134209635" dir="ltr"
                         class="w-fit bg-neutral-900/10 backdrop-blur-xs rounded-xl px-4 py-2 cursor-pointer transition-colors duration-300 hover:bg-violet-600 hover:text-white">+98
                         913 420 9635</a>
-                    <a href="tel:+989162675407"
+                    <a href="tel:+989162675407" dir="ltr"
                         class="w-fit bg-neutral-900/10 backdrop-blur-xs rounded-xl px-4 py-2 cursor-pointer transition-colors duration-300 hover:bg-violet-600 hover:text-white">+98
                         916 267 5407</a>
                 </div>
