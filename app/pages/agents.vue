@@ -129,7 +129,7 @@
             <div class="w-full order-2 lg:order-1 py-6 flex gap-4 flex-col justify-between h-full items-center">
                 <div class="flex flex-wrap gap-4 justify-between items-center w-full">
                     <div class="bg-white/10 backdrop-blur-sm p-4 border-2 border-violet-500 rounded-xl">
-                        <img src="/ariyan.png" class="h-20 sm:h-40 md:h-52"></img>
+                        <img src="/fardad.jpg" class="h-20 sm:h-40 md:h-52"></img>
                     </div>
                     <div class="bg-white/10 backdrop-blur-sm p-4 border-2 border-violet-500 rounded-xl">
                         <img src="/diaco.jpg" class="h-20 sm:h-40 md:h-52"></img>
